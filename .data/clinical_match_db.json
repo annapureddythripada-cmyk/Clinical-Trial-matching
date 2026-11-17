@@ -1,0 +1,2072 @@
+{
+  "users": [
+    {
+      "id": "user-demo-coord",
+      "email": "coordinator@clinicalmatch.demo",
+      "passwordHash": "e61f02421bdae45d2465bfa3:6febd4ebe8c1e771d93a351d68e5c5a8e87a11d14020299aec904512e2d63157",
+      "fullName": "Sarah J. Evans, CCRP",
+      "role": "RESEARCH_COORDINATOR",
+      "organization": "Pacific Clinical Research Network (Demo)",
+      "isDemoUser": true,
+      "consentAcceptedAt": "2026-11-17T10:16:17.237Z",
+      "createdAt": "2026-11-17T10:16:17.237Z"
+    },
+    {
+      "id": "user-demo-clinician",
+      "email": "clinician@clinicalmatch.demo",
+      "passwordHash": "dd143ee86bebb264649362e3:fc58b7374518dea8c80344fa1f90da232e190b1e7218e969d542f3570f049cb9",
+      "fullName": "Dr. Aris Thorne, MD",
+      "role": "CLINICIAN",
+      "organization": "Pacific Clinical Research Network (Demo)",
+      "isDemoUser": true,
+      "consentAcceptedAt": "2026-11-17T10:16:17.237Z",
+      "createdAt": "2026-11-17T10:16:17.237Z"
+    },
+    {
+      "id": "user-demo-admin",
+      "email": "admin@clinicalmatch.demo",
+      "passwordHash": "6979ab8ec1043b5b2e63ff43:542feee93d88846606eea633db45974094d04c4399707ea85d75b6ee8a745739",
+      "fullName": "Maya Lin, MS (Workspace Admin)",
+      "role": "ADMINISTRATOR",
+      "organization": "Pacific Clinical Research Network (Demo)",
+      "isDemoUser": true,
+      "consentAcceptedAt": "2026-11-17T10:16:17.237Z",
+      "createdAt": "2026-11-17T10:16:17.237Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "3d19ae1ae1d1630a0514c961afe2bb92d16e6ba5be267998",
+      "userId": "user-demo-coord",
+      "expiresAt": "2026-11-18T10:16:24.721Z"
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial-demo-001",
+      "nctId": "NCT05841290",
+      "title": "Phase II Study of Targeted EGFR-Bispecific Antibody Combination in Treatment-Naive EGFR-Mutant Advanced Non-Small Cell Lung Cancer",
+      "briefTitle": "EGFR-Bispecific Study in First-Line EGFR+ NSCLC",
+      "conditions": [
+        "Non-Small Cell Lung Cancer",
+        "NSCLC",
+        "EGFR Exon 19 Deletion"
+      ],
+      "interventions": [
+        "Targeted Bispecific Antibody (JNJ-Demo-372)",
+        "Third-Generation EGFR TKI"
+      ],
+      "phase": "PHASE2",
+      "recruitmentStatus": "RECRUITING",
+      "sponsor": "Pacific Oncology Collaborative (Synthetic Demo Sponsor)",
+      "summary": "Multi-center Phase II open-label study evaluating safety and progression-free survival of a targeted EGFR/MET bispecific regimen in adults with locally advanced or metastatic NSCLC harboring EGFR exon 19 deletion or L858R mutation.",
+      "eligibilityCriteriaRaw": "Inclusion Criteria:\n1. Age >= 18 years at time of informed consent.\n2. Histologically confirmed Stage IIIB or Stage IV Non-Small Cell Lung Cancer (NSCLC).\n3. Documented activating EGFR mutation (Exon 19 deletion or Exon 21 L858R).\n4. ECOG performance status of 0 or 1.\n5. Absolute Neutrophil Count (ANC) >= 1500 /µL, Platelets >= 100000 /µL, Hemoglobin >= 9.0 g/dL.\n6. Adequate renal function defined as eGFR >= 45 mL/min.\n\nExclusion Criteria:\n1. Prior systemic therapy with an EGFR tyrosine kinase inhibitor (TKI) for metastatic disease.\n2. Known active or untreated symptomatic central nervous system (CNS) / brain metastases.\n3. Uncontrolled active interstitial lung disease (ILD) or pneumonitis.",
+      "minAgeYears": 18,
+      "maxAgeYears": 99,
+      "eligibleSex": "ALL",
+      "locations": [
+        {
+          "facility": "University Comprehensive Cancer Center — Thoracic Oncology Unit",
+          "city": "Seattle",
+          "state": "WA",
+          "country": "United States",
+          "status": "RECRUITING",
+          "contactName": "Dr. Helena Cho, MD (Synthetic Site PI)",
+          "contactPhone": "+1 (206) 555-0142",
+          "contactEmail": "thoracic-trials-demo@example.org",
+          "siteVerified": true
+        },
+        {
+          "facility": "Bay Area Academic Medical Center",
+          "city": "San Francisco",
+          "state": "CA",
+          "country": "United States",
+          "status": "RECRUITING",
+          "contactName": "Research Intake Desk",
+          "contactPhone": "+1 (415) 555-0198",
+          "contactEmail": "oncology-intake-demo@example.org",
+          "siteVerified": false
+        }
+      ],
+      "lastUpdateDate": "2026-10-18",
+      "dataOrigin": "DEMO_SYNTHETIC",
+      "siteVerificationNote": "Synthetic demo protocol modeled on public oncology registry structure. Site #1 marked locally verified for demonstration.",
+      "criteriaExtractedAt": "2026-11-10T09:00:00Z",
+      "criteriaExtractionSource": "SYNTHETIC_DEMO",
+      "structuredCriteria": [
+        {
+          "id": "crit-001-1",
+          "trialId": "trial-demo-001",
+          "criterionType": "INCLUSION",
+          "category": "AGE",
+          "originalText": "Age >= 18 years at time of informed consent.",
+          "sourceSection": "Inclusion Criteria #1",
+          "ruleOperator": "GTE",
+          "targetParameter": "age",
+          "minValue": 18,
+          "unit": "years",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-001-2",
+          "trialId": "trial-demo-001",
+          "criterionType": "INCLUSION",
+          "category": "DIAGNOSIS",
+          "originalText": "Histologically confirmed Stage IIIB or Stage IV Non-Small Cell Lung Cancer (NSCLC).",
+          "sourceSection": "Inclusion Criteria #2",
+          "ruleOperator": "INCLUDES",
+          "targetParameter": "diagnosis",
+          "expectedKeywords": [
+            "non-small cell lung cancer",
+            "nsclc",
+            "lung adenocarcinoma"
+          ],
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-001-3",
+          "trialId": "trial-demo-001",
+          "criterionType": "INCLUSION",
+          "category": "DISEASE_STAGE",
+          "originalText": "Locally advanced Stage IIIB or metastatic Stage IV disease.",
+          "sourceSection": "Inclusion Criteria #2",
+          "ruleOperator": "INCLUDES",
+          "targetParameter": "diseaseStage",
+          "expectedKeywords": [
+            "stage iiib",
+            "stage iv",
+            "metastatic"
+          ],
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-001-4",
+          "trialId": "trial-demo-001",
+          "criterionType": "INCLUSION",
+          "category": "DIAGNOSIS",
+          "originalText": "Documented activating EGFR mutation (Exon 19 deletion or Exon 21 L858R).",
+          "sourceSection": "Inclusion Criteria #3",
+          "ruleOperator": "INCLUDES",
+          "targetParameter": "biomarker",
+          "expectedKeywords": [
+            "egfr exon 19",
+            "exon 19 deletion",
+            "l858r",
+            "egfr"
+          ],
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-001-5",
+          "trialId": "trial-demo-001",
+          "criterionType": "INCLUSION",
+          "category": "PERFORMANCE_STATUS",
+          "originalText": "ECOG performance status of 0 or 1.",
+          "sourceSection": "Inclusion Criteria #4",
+          "ruleOperator": "LTE",
+          "targetParameter": "ecogStatus",
+          "maxValue": 1,
+          "unit": "ECOG",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-001-6",
+          "trialId": "trial-demo-001",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalText": "Absolute Neutrophil Count (ANC) >= 1500 /µL.",
+          "sourceSection": "Inclusion Criteria #5",
+          "ruleOperator": "GTE",
+          "targetParameter": "anc",
+          "minValue": 1500,
+          "unit": "/µL",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-001-7",
+          "trialId": "trial-demo-001",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalText": "Platelets >= 100000 /µL.",
+          "sourceSection": "Inclusion Criteria #5",
+          "ruleOperator": "GTE",
+          "targetParameter": "platelets",
+          "minValue": 100000,
+          "unit": "/µL",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-001-8",
+          "trialId": "trial-demo-001",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalText": "Hemoglobin >= 9.0 g/dL.",
+          "sourceSection": "Inclusion Criteria #5",
+          "ruleOperator": "GTE",
+          "targetParameter": "hemoglobin",
+          "minValue": 9,
+          "unit": "g/dL",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-001-9",
+          "trialId": "trial-demo-001",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalText": "Adequate renal function defined as eGFR >= 45 mL/min.",
+          "sourceSection": "Inclusion Criteria #6",
+          "ruleOperator": "GTE",
+          "targetParameter": "egfr",
+          "minValue": 45,
+          "unit": "mL/min",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-001-10",
+          "trialId": "trial-demo-001",
+          "criterionType": "EXCLUSION",
+          "category": "PREVIOUS_TREATMENT",
+          "originalText": "Prior systemic therapy with an EGFR tyrosine kinase inhibitor (TKI) for metastatic disease.",
+          "sourceSection": "Exclusion Criteria #1",
+          "ruleOperator": "EXCLUDES",
+          "targetParameter": "previousTreatments",
+          "expectedKeywords": [
+            "osimertinib",
+            "erlotinib",
+            "gefitinib",
+            "afatinib",
+            "egfr tki"
+          ],
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-001-11",
+          "trialId": "trial-demo-001",
+          "criterionType": "EXCLUSION",
+          "category": "COMORBIDITY",
+          "originalText": "Known active or untreated symptomatic central nervous system (CNS) / brain metastases.",
+          "sourceSection": "Exclusion Criteria #2",
+          "ruleOperator": "EXCLUDES",
+          "targetParameter": "comorbidity",
+          "expectedKeywords": [
+            "brain metastases",
+            "cns metastases",
+            "leptomeningeal"
+          ],
+          "requiresHumanReview": false
+        }
+      ]
+    },
+    {
+      "id": "trial-demo-002",
+      "nctId": "NCT06019450",
+      "title": "Phase III Randomized Trial of ADC-HER3 vs Platinum Chemotherapy After Progression on Third-Generation EGFR TKI in NSCLC",
+      "briefTitle": "HER3-ADC Post-Osimertinib Study in EGFR+ NSCLC",
+      "conditions": [
+        "Non-Small Cell Lung Cancer",
+        "EGFR-Mutant NSCLC"
+      ],
+      "interventions": [
+        "Patritumab-Demo-DXd",
+        "Carboplatin + Pemetrexed"
+      ],
+      "phase": "PHASE3",
+      "recruitmentStatus": "RECRUITING",
+      "sponsor": "Northstar Thoracic Group (Synthetic Demo Sponsor)",
+      "summary": "Phase III study for patients with EGFR-mutated metastatic NSCLC who have documented radiographic progression after prior third-generation EGFR TKI therapy such as osimertinib.",
+      "eligibilityCriteriaRaw": "Inclusion Criteria:\n1. Age >= 18 years.\n2. Pathologically documented Stage IV NSCLC with EGFR Exon 19 deletion or L858R.\n3. Required prior progression on at least one third-generation EGFR TKI (e.g., osimertinib).\n4. ECOG performance status <= 1.\n5. Platelets >= 100000 /µL and ANC >= 1500 /µL.\n\nExclusion Criteria:\n1. History of interstitial lung disease (ILD) requiring systemic steroids.",
+      "minAgeYears": 18,
+      "maxAgeYears": 99,
+      "eligibleSex": "ALL",
+      "locations": [
+        {
+          "facility": "Midwest Clinical Research Pavilion",
+          "city": "Chicago",
+          "state": "IL",
+          "country": "United States",
+          "status": "RECRUITING",
+          "contactName": "Clinical Trials Navigation Office",
+          "contactPhone": "+1 (312) 555-0174",
+          "contactEmail": "midwest-thoracic-demo@example.org",
+          "siteVerified": true
+        }
+      ],
+      "lastUpdateDate": "2026-10-29",
+      "dataOrigin": "DEMO_SYNTHETIC",
+      "criteriaExtractedAt": "2026-11-10T09:00:00Z",
+      "criteriaExtractionSource": "SYNTHETIC_DEMO",
+      "structuredCriteria": [
+        {
+          "id": "crit-002-1",
+          "trialId": "trial-demo-002",
+          "criterionType": "INCLUSION",
+          "category": "AGE",
+          "originalText": "Age >= 18 years.",
+          "sourceSection": "Inclusion Criteria #1",
+          "ruleOperator": "GTE",
+          "targetParameter": "age",
+          "minValue": 18,
+          "unit": "years",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-002-2",
+          "trialId": "trial-demo-002",
+          "criterionType": "INCLUSION",
+          "category": "DIAGNOSIS",
+          "originalText": "Pathologically documented Stage IV NSCLC with EGFR Exon 19 deletion or L858R.",
+          "sourceSection": "Inclusion Criteria #2",
+          "ruleOperator": "INCLUDES",
+          "targetParameter": "diagnosis",
+          "expectedKeywords": [
+            "nsclc",
+            "non-small cell lung cancer"
+          ],
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-002-3",
+          "trialId": "trial-demo-002",
+          "criterionType": "INCLUSION",
+          "category": "PREVIOUS_TREATMENT",
+          "originalText": "Required prior progression on at least one third-generation EGFR TKI (e.g., osimertinib).",
+          "sourceSection": "Inclusion Criteria #3",
+          "ruleOperator": "INCLUDES",
+          "targetParameter": "previousTreatments",
+          "expectedKeywords": [
+            "osimertinib",
+            "third-generation egfr tki",
+            "lazertinib"
+          ],
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-002-4",
+          "trialId": "trial-demo-002",
+          "criterionType": "INCLUSION",
+          "category": "PERFORMANCE_STATUS",
+          "originalText": "ECOG performance status <= 1.",
+          "sourceSection": "Inclusion Criteria #4",
+          "ruleOperator": "LTE",
+          "targetParameter": "ecogStatus",
+          "maxValue": 1,
+          "unit": "ECOG",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-002-5",
+          "trialId": "trial-demo-002",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalText": "Platelets >= 100000 /µL.",
+          "sourceSection": "Inclusion Criteria #5",
+          "ruleOperator": "GTE",
+          "targetParameter": "platelets",
+          "minValue": 100000,
+          "unit": "/µL",
+          "requiresHumanReview": false
+        }
+      ]
+    },
+    {
+      "id": "trial-demo-003",
+      "nctId": "NCT05910322",
+      "title": "Phase II Trial of Selective KRAS G12C Inhibitor Plus Anti-EGFR Monoclonal Antibody in Pretreated Colorectal Adenocarcinoma",
+      "briefTitle": "KRAS G12C + Anti-EGFR in Metastatic Colorectal Cancer",
+      "conditions": [
+        "Colorectal Cancer",
+        "Metastatic Colorectal Adenocarcinoma",
+        "KRAS G12C"
+      ],
+      "interventions": [
+        "Adagrasib-Demo",
+        "Cetuximab"
+      ],
+      "phase": "PHASE2",
+      "recruitmentStatus": "RECRUITING",
+      "sponsor": "Atlantic GI Oncology Consortium (Synthetic Demo Sponsor)",
+      "summary": "Evaluates objective response rate and safety of dual KRAS G12C and EGFR blockade in adult patients with KRAS G12C-mutated metastatic colorectal cancer.",
+      "eligibilityCriteriaRaw": "Inclusion Criteria:\n1. Age >= 18 years.\n2. Histologically confirmed metastatic colorectal adenocarcinoma with documented KRAS G12C mutation.\n3. ECOG performance status 0 or 1.\n4. Platelets >= 100000 /µL and Hemoglobin >= 9.0 g/dL.\n\nExclusion Criteria:\n1. Acute myocardial infarction, unstable angina, or coronary artery bypass within 6 months prior to screening.",
+      "minAgeYears": 18,
+      "maxAgeYears": 99,
+      "eligibleSex": "ALL",
+      "locations": [
+        {
+          "facility": "Northeast GI Cancer Institute",
+          "city": "Boston",
+          "state": "MA",
+          "country": "United States",
+          "status": "RECRUITING",
+          "contactName": "Dr. Samuel Okonkwo, MD (Synthetic Site PI)",
+          "contactPhone": "+1 (617) 555-0115",
+          "contactEmail": "gi-trials-demo@example.org",
+          "siteVerified": true
+        }
+      ],
+      "lastUpdateDate": "2026-10-12",
+      "dataOrigin": "DEMO_SYNTHETIC",
+      "criteriaExtractedAt": "2026-11-10T09:00:00Z",
+      "criteriaExtractionSource": "SYNTHETIC_DEMO",
+      "structuredCriteria": [
+        {
+          "id": "crit-003-1",
+          "trialId": "trial-demo-003",
+          "criterionType": "INCLUSION",
+          "category": "AGE",
+          "originalText": "Age >= 18 years.",
+          "sourceSection": "Inclusion Criteria #1",
+          "ruleOperator": "GTE",
+          "targetParameter": "age",
+          "minValue": 18,
+          "unit": "years",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-003-2",
+          "trialId": "trial-demo-003",
+          "criterionType": "INCLUSION",
+          "category": "DIAGNOSIS",
+          "originalText": "Histologically confirmed metastatic colorectal adenocarcinoma with documented KRAS G12C mutation.",
+          "sourceSection": "Inclusion Criteria #2",
+          "ruleOperator": "INCLUDES",
+          "targetParameter": "diagnosis",
+          "expectedKeywords": [
+            "colorectal",
+            "colon cancer",
+            "kras g12c"
+          ],
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-003-3",
+          "trialId": "trial-demo-003",
+          "criterionType": "INCLUSION",
+          "category": "PERFORMANCE_STATUS",
+          "originalText": "ECOG performance status 0 or 1.",
+          "sourceSection": "Inclusion Criteria #3",
+          "ruleOperator": "LTE",
+          "targetParameter": "ecogStatus",
+          "maxValue": 1,
+          "unit": "ECOG",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-003-4",
+          "trialId": "trial-demo-003",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalText": "Platelets >= 100000 /µL.",
+          "sourceSection": "Inclusion Criteria #4",
+          "ruleOperator": "GTE",
+          "targetParameter": "platelets",
+          "minValue": 100000,
+          "unit": "/µL",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-003-5",
+          "trialId": "trial-demo-003",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalText": "Hemoglobin >= 9.0 g/dL.",
+          "sourceSection": "Inclusion Criteria #4",
+          "ruleOperator": "GTE",
+          "targetParameter": "hemoglobin",
+          "minValue": 9,
+          "unit": "g/dL",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-003-6",
+          "trialId": "trial-demo-003",
+          "criterionType": "EXCLUSION",
+          "category": "COMORBIDITY",
+          "originalText": "Acute myocardial infarction, unstable angina, or coronary artery bypass within 6 months prior to screening.",
+          "sourceSection": "Exclusion Criteria #1",
+          "ruleOperator": "EXCLUDES",
+          "targetParameter": "comorbidity",
+          "expectedKeywords": [
+            "myocardial infarction",
+            "unstable angina",
+            "recent mi"
+          ],
+          "requiresHumanReview": false
+        }
+      ]
+    },
+    {
+      "id": "trial-demo-004",
+      "nctId": "NCT05728814",
+      "title": "Phase II/III Study of TROP2-Directed Antibody-Drug Conjugate Plus Checkpoint Inhibitor in Advanced Triple-Negative Breast Cancer",
+      "briefTitle": "TROP2-ADC + Immunotherapy in Advanced TNBC",
+      "conditions": [
+        "Triple-Negative Breast Cancer",
+        "TNBC",
+        "Breast Cancer"
+      ],
+      "interventions": [
+        "Sacituzumab-Demo-ADC",
+        "Pembrolizumab"
+      ],
+      "phase": "PHASE2_PHASE3",
+      "recruitmentStatus": "RECRUITING",
+      "sponsor": "Breast Oncology Translational Network (Synthetic Demo Sponsor)",
+      "summary": "Assesses progression-free survival in adult patients with locally advanced inoperable or metastatic triple-negative breast cancer with documented PD-L1 CPS scoring and adequate hepatic/cardiac function.",
+      "eligibilityCriteriaRaw": "Inclusion Criteria:\n1. Age >= 18 years.\n2. Histologically confirmed Triple-Negative Breast Cancer (TNBC), Stage IIIB or Stage IV.\n3. Documented PD-L1 Combined Positive Score (CPS >= 10) from central or validated local pathology.\n4. ECOG performance status 0 or 1.\n5. Adequate hepatic function: AST <= 120 U/L, ALT <= 120 U/L, Total Bilirubin <= 1.5 mg/dL.\n6. Left Ventricular Ejection Fraction (LVEF) >= 50% documented within 90 days.\n\nExclusion Criteria:\n1. Prior therapy with a topoisomerase I inhibitor antibody-drug conjugate.",
+      "minAgeYears": 18,
+      "maxAgeYears": 99,
+      "eligibleSex": "ALL",
+      "locations": [
+        {
+          "facility": "Southern Clinical Breast Center",
+          "city": "Houston",
+          "state": "TX",
+          "country": "United States",
+          "status": "RECRUITING",
+          "contactName": "Breast Research Coordinator Desk",
+          "contactPhone": "+1 (713) 555-0163",
+          "contactEmail": "tnbc-study-demo@example.org",
+          "siteVerified": true
+        }
+      ],
+      "lastUpdateDate": "2026-11-01",
+      "dataOrigin": "DEMO_SYNTHETIC",
+      "criteriaExtractedAt": "2026-11-10T09:00:00Z",
+      "criteriaExtractionSource": "SYNTHETIC_DEMO",
+      "structuredCriteria": [
+        {
+          "id": "crit-004-1",
+          "trialId": "trial-demo-004",
+          "criterionType": "INCLUSION",
+          "category": "AGE",
+          "originalText": "Age >= 18 years.",
+          "sourceSection": "Inclusion Criteria #1",
+          "ruleOperator": "GTE",
+          "targetParameter": "age",
+          "minValue": 18,
+          "unit": "years",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-004-2",
+          "trialId": "trial-demo-004",
+          "criterionType": "INCLUSION",
+          "category": "DIAGNOSIS",
+          "originalText": "Histologically confirmed Triple-Negative Breast Cancer (TNBC), Stage IIIB or Stage IV.",
+          "sourceSection": "Inclusion Criteria #2",
+          "ruleOperator": "INCLUDES",
+          "targetParameter": "diagnosis",
+          "expectedKeywords": [
+            "triple-negative breast cancer",
+            "tnbc"
+          ],
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-004-3",
+          "trialId": "trial-demo-004",
+          "criterionType": "INCLUSION",
+          "category": "DIAGNOSIS",
+          "originalText": "Documented PD-L1 Combined Positive Score (CPS >= 10) from validated pathology.",
+          "sourceSection": "Inclusion Criteria #3",
+          "ruleOperator": "GTE",
+          "targetParameter": "pdl1_cps",
+          "minValue": 10,
+          "unit": "CPS",
+          "requiresHumanReview": true,
+          "reviewNote": "Requires pathology report verifying PD-L1 CPS assay method."
+        },
+        {
+          "id": "crit-004-4",
+          "trialId": "trial-demo-004",
+          "criterionType": "INCLUSION",
+          "category": "PERFORMANCE_STATUS",
+          "originalText": "ECOG performance status 0 or 1.",
+          "sourceSection": "Inclusion Criteria #4",
+          "ruleOperator": "LTE",
+          "targetParameter": "ecogStatus",
+          "maxValue": 1,
+          "unit": "ECOG",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-004-5",
+          "trialId": "trial-demo-004",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalText": "AST <= 120 U/L.",
+          "sourceSection": "Inclusion Criteria #5",
+          "ruleOperator": "LTE",
+          "targetParameter": "ast",
+          "maxValue": 120,
+          "unit": "U/L",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-004-6",
+          "trialId": "trial-demo-004",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalText": "Total Bilirubin <= 1.5 mg/dL.",
+          "sourceSection": "Inclusion Criteria #5",
+          "ruleOperator": "LTE",
+          "targetParameter": "bilirubin",
+          "maxValue": 1.5,
+          "unit": "mg/dL",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-004-7",
+          "trialId": "trial-demo-004",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalText": "Left Ventricular Ejection Fraction (LVEF) >= 50%.",
+          "sourceSection": "Inclusion Criteria #6",
+          "ruleOperator": "GTE",
+          "targetParameter": "lvef",
+          "minValue": 50,
+          "unit": "%",
+          "requiresHumanReview": false
+        }
+      ]
+    },
+    {
+      "id": "trial-demo-005",
+      "nctId": "NCT06104588",
+      "title": "Phase II Personalized Neoantigen mRNA Vaccine Plus PD-1 Blockade in Resected or Unresectable BRAF V600E Melanoma",
+      "briefTitle": "Neoantigen mRNA + PD-1 Study in BRAF V600E Melanoma",
+      "conditions": [
+        "Cutaneous Melanoma",
+        "Melanoma",
+        "BRAF V600E"
+      ],
+      "interventions": [
+        "mRNA-Demo-4157",
+        "Anti-PD-1 Monoclonal Antibody"
+      ],
+      "phase": "PHASE2",
+      "recruitmentStatus": "RECRUITING",
+      "sponsor": "Rocky Mountain Immunotherapy Alliance (Synthetic Demo Sponsor)",
+      "summary": "Investigational trial evaluating individualized neoantigen therapy plus PD-1 inhibition in adults with Stage IIIB–IV BRAF V600E cutaneous melanoma without active untreated brain metastases.",
+      "eligibilityCriteriaRaw": "Inclusion Criteria:\n1. Age >= 18 years.\n2. Histologically confirmed Stage IIIB, IIIC, or Stage IV Cutaneous Melanoma with BRAF V600E mutation.\n3. ECOG performance status 0 or 1.\n4. ANC >= 1500 /µL and eGFR >= 45 mL/min.\n\nExclusion Criteria:\n1. Active or untreated brain / CNS metastases on screening neuroimaging.",
+      "minAgeYears": 18,
+      "maxAgeYears": 99,
+      "eligibleSex": "ALL",
+      "locations": [
+        {
+          "facility": "Mountain West Melanoma Center",
+          "city": "Denver",
+          "state": "CO",
+          "country": "United States",
+          "status": "RECRUITING",
+          "contactName": "Melanoma Trial Navigator",
+          "contactPhone": "+1 (303) 555-0188",
+          "contactEmail": "melanoma-trials-demo@example.org",
+          "siteVerified": true
+        }
+      ],
+      "lastUpdateDate": "2026-11-05",
+      "dataOrigin": "DEMO_SYNTHETIC",
+      "criteriaExtractedAt": "2026-11-10T09:00:00Z",
+      "criteriaExtractionSource": "SYNTHETIC_DEMO",
+      "structuredCriteria": [
+        {
+          "id": "crit-005-1",
+          "trialId": "trial-demo-005",
+          "criterionType": "INCLUSION",
+          "category": "AGE",
+          "originalText": "Age >= 18 years.",
+          "sourceSection": "Inclusion Criteria #1",
+          "ruleOperator": "GTE",
+          "targetParameter": "age",
+          "minValue": 18,
+          "unit": "years",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-005-2",
+          "trialId": "trial-demo-005",
+          "criterionType": "INCLUSION",
+          "category": "DIAGNOSIS",
+          "originalText": "Histologically confirmed Stage IIIB, IIIC, or Stage IV Cutaneous Melanoma with BRAF V600E mutation.",
+          "sourceSection": "Inclusion Criteria #2",
+          "ruleOperator": "INCLUDES",
+          "targetParameter": "diagnosis",
+          "expectedKeywords": [
+            "melanoma",
+            "braf v600e"
+          ],
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-005-3",
+          "trialId": "trial-demo-005",
+          "criterionType": "INCLUSION",
+          "category": "PERFORMANCE_STATUS",
+          "originalText": "ECOG performance status 0 or 1.",
+          "sourceSection": "Inclusion Criteria #3",
+          "ruleOperator": "LTE",
+          "targetParameter": "ecogStatus",
+          "maxValue": 1,
+          "unit": "ECOG",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-005-4",
+          "trialId": "trial-demo-005",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalText": "ANC >= 1500 /µL.",
+          "sourceSection": "Inclusion Criteria #4",
+          "ruleOperator": "GTE",
+          "targetParameter": "anc",
+          "minValue": 1500,
+          "unit": "/µL",
+          "requiresHumanReview": false
+        },
+        {
+          "id": "crit-005-5",
+          "trialId": "trial-demo-005",
+          "criterionType": "EXCLUSION",
+          "category": "COMORBIDITY",
+          "originalText": "Active or untreated brain / CNS metastases on screening neuroimaging.",
+          "sourceSection": "Exclusion Criteria #1",
+          "ruleOperator": "EXCLUDES",
+          "targetParameter": "comorbidity",
+          "expectedKeywords": [
+            "brain metastasis",
+            "brain metastases",
+            "cns metastasis"
+          ],
+          "requiresHumanReview": false
+        }
+      ]
+    }
+  ],
+  "patients": [
+    {
+      "id": "patient-demo-001",
+      "mrnLabel": "SYNTH-PT-001",
+      "displayName": "Elena Rostova (Synthetic Demo)",
+      "isSynthetic": true,
+      "age": 58,
+      "dateOfBirth": "1968-04-14",
+      "sex": "FEMALE",
+      "primaryDiagnosis": "Non-Small Cell Lung Cancer (Lung Adenocarcinoma)",
+      "diseaseStage": "Stage IV (Pleural and osseous involvement, no CNS disease)",
+      "ecogStatus": 1,
+      "medicalHistory": [
+        "Hypertension (controlled)",
+        "Former light smoker (quit 2014)"
+      ],
+      "medications": [
+        "Lisinopril 10 mg daily",
+        "Vitamin D3 1000 IU daily"
+      ],
+      "allergies": [
+        "Penicillin (mild rash)"
+      ],
+      "previousTreatments": [
+        "Diagnostic VATS biopsy (2026-10-08)",
+        "Palliative focal rib radiation (2026-10-20)"
+      ],
+      "pathologyInfo": "Bronchoscopic & pleural biopsy confirms TTF-1+ lung adenocarcinoma. NGS panel (2026-10-15): EGFR Exon 19 deletion (p.E746_A750del) positive; ALK/ROS1/RET negative; PD-L1 TPS 35%.",
+      "labResults": [
+        {
+          "id": "lab-101",
+          "name": "Absolute Neutrophil Count (ANC)",
+          "parameterKey": "anc",
+          "value": 2450,
+          "unit": "/µL",
+          "referenceRange": "1500-8000",
+          "testDate": "2026-11-08",
+          "sourceLocation": "CBC Panel 2026-11-08"
+        },
+        {
+          "id": "lab-102",
+          "name": "Platelet Count",
+          "parameterKey": "platelets",
+          "value": 195000,
+          "unit": "/µL",
+          "referenceRange": "150000-400000",
+          "testDate": "2026-11-08",
+          "sourceLocation": "CBC Panel 2026-11-08"
+        },
+        {
+          "id": "lab-103",
+          "name": "Hemoglobin",
+          "parameterKey": "hemoglobin",
+          "value": 11.4,
+          "unit": "g/dL",
+          "referenceRange": "12.0-15.5",
+          "testDate": "2026-11-08",
+          "sourceLocation": "CBC Panel 2026-11-08"
+        },
+        {
+          "id": "lab-104",
+          "name": "Estimated GFR (eGFR)",
+          "parameterKey": "egfr",
+          "value": 76,
+          "unit": "mL/min",
+          "referenceRange": ">= 60",
+          "testDate": "2026-11-08",
+          "sourceLocation": "CMP Panel 2026-11-08"
+        },
+        {
+          "id": "lab-105",
+          "name": "AST",
+          "parameterKey": "ast",
+          "value": 28,
+          "unit": "U/L",
+          "referenceRange": "10-40",
+          "testDate": "2026-11-08",
+          "sourceLocation": "CMP Panel 2026-11-08"
+        },
+        {
+          "id": "lab-106",
+          "name": "Total Bilirubin",
+          "parameterKey": "bilirubin",
+          "value": 0.7,
+          "unit": "mg/dL",
+          "referenceRange": "0.1-1.2",
+          "testDate": "2026-11-08",
+          "sourceLocation": "CMP Panel 2026-11-08"
+        }
+      ],
+      "clinicalNotes": "SYNTHETIC DEMO RECORD: 58-year-old female newly diagnosed with Stage IV lung adenocarcinoma (NSCLC) harboring EGFR Exon 19 deletion. Baseline Brain MRI (2026-10-19) showed no brain metastases or leptomeningeal enhancement. No prior systemic EGFR TKI or chemotherapy administered. ECOG performance status 1 on thoracic oncology consult (2026-11-09).",
+      "uploadedDocumentName": "SYNTH_PT_001_Thoracic_Consult_Note.txt",
+      "missingOrUncertainFields": [],
+      "aiProcessingAuthorized": true,
+      "createdAt": "2026-11-10T08:30:00Z",
+      "updatedAt": "2026-11-10T09:15:00Z",
+      "extractedFacts": [
+        {
+          "id": "fact-101",
+          "patientId": "patient-demo-001",
+          "category": "diagnosis",
+          "label": "Primary Diagnosis",
+          "value": "Stage IV Non-Small Cell Lung Cancer (Lung Adenocarcinoma)",
+          "temporalStatus": "CURRENT",
+          "confidence": "HIGH",
+          "exactSourceQuote": "newly diagnosed with Stage IV lung adenocarcinoma (NSCLC)",
+          "sourceLocation": "Thoracic Consult Note, Paragraph 1",
+          "reviewStatus": "APPROVED",
+          "reviewedBy": "Demo Coordinator",
+          "reviewedAt": "2026-11-10T09:05:00Z",
+          "extractionMethod": "SYNTHETIC_DEMO"
+        },
+        {
+          "id": "fact-102",
+          "patientId": "patient-demo-001",
+          "category": "biomarker",
+          "label": "EGFR Mutation",
+          "value": "EGFR Exon 19 deletion (p.E746_A750del) positive",
+          "testDate": "2026-10-15",
+          "temporalStatus": "CURRENT",
+          "confidence": "HIGH",
+          "exactSourceQuote": "NGS panel (2026-10-15): EGFR Exon 19 deletion (p.E746_A750del) positive",
+          "sourceLocation": "Pathology & NGS Summary",
+          "reviewStatus": "APPROVED",
+          "reviewedBy": "Demo Coordinator",
+          "reviewedAt": "2026-11-10T09:05:00Z",
+          "extractionMethod": "SYNTHETIC_DEMO"
+        },
+        {
+          "id": "fact-103",
+          "patientId": "patient-demo-001",
+          "category": "performance_status",
+          "label": "ECOG Status",
+          "value": "ECOG 1",
+          "numericValue": 1,
+          "unit": "ECOG",
+          "testDate": "2026-11-09",
+          "temporalStatus": "CURRENT",
+          "confidence": "HIGH",
+          "exactSourceQuote": "ECOG performance status 1 on thoracic oncology consult (2026-11-09)",
+          "sourceLocation": "Thoracic Consult Note, Paragraph 1",
+          "reviewStatus": "APPROVED",
+          "reviewedBy": "Demo Coordinator",
+          "reviewedAt": "2026-11-10T09:05:00Z",
+          "extractionMethod": "SYNTHETIC_DEMO"
+        },
+        {
+          "id": "fact-104",
+          "patientId": "patient-demo-001",
+          "category": "treatment_history",
+          "label": "Prior EGFR TKI Exposure",
+          "value": "No prior systemic EGFR TKI or chemotherapy administered",
+          "temporalStatus": "NEGATED",
+          "confidence": "HIGH",
+          "exactSourceQuote": "No prior systemic EGFR TKI or chemotherapy administered.",
+          "sourceLocation": "Thoracic Consult Note, Paragraph 1",
+          "reviewStatus": "APPROVED",
+          "reviewedBy": "Demo Coordinator",
+          "reviewedAt": "2026-11-10T09:05:00Z",
+          "extractionMethod": "SYNTHETIC_DEMO"
+        },
+        {
+          "id": "fact-105",
+          "patientId": "patient-demo-001",
+          "category": "comorbidity",
+          "label": "CNS / Brain Metastases",
+          "value": "No brain metastases or leptomeningeal enhancement on Brain MRI",
+          "testDate": "2026-10-19",
+          "temporalStatus": "NEGATED",
+          "confidence": "HIGH",
+          "exactSourceQuote": "Baseline Brain MRI (2026-10-19) showed no brain metastases",
+          "sourceLocation": "Thoracic Consult Note, Paragraph 1",
+          "reviewStatus": "APPROVED",
+          "reviewedBy": "Demo Coordinator",
+          "reviewedAt": "2026-11-10T09:05:00Z",
+          "extractionMethod": "SYNTHETIC_DEMO"
+        }
+      ]
+    },
+    {
+      "id": "patient-demo-002",
+      "mrnLabel": "SYNTH-PT-002",
+      "displayName": "Marcus Vance (Synthetic Demo)",
+      "isSynthetic": true,
+      "age": 67,
+      "dateOfBirth": "1959-07-22",
+      "sex": "MALE",
+      "primaryDiagnosis": "Metastatic Colorectal Adenocarcinoma (KRAS G12C)",
+      "diseaseStage": "Stage IV (Hepatic and peritoneal metastases)",
+      "ecogStatus": 1,
+      "medicalHistory": [
+        "Acute myocardial infarction (NSTEMI, 2026-08-19, 3 months ago)",
+        "Type 2 Diabetes Mellitus"
+      ],
+      "medications": [
+        "Clopidogrel 75 mg daily",
+        "Metformin 500 mg BID",
+        "Atorvastatin 40 mg daily"
+      ],
+      "allergies": [
+        "No known drug allergies"
+      ],
+      "previousTreatments": [
+        "FOLFOX + Bevacizumab (2025-11 to 2026-06)",
+        "FOLFIRI (2026-07 to 2026-09)"
+      ],
+      "pathologyInfo": "Sigmoid colon adenocarcinoma biopsy confirms KRAS G12C mutation; MMR proficient (pMMR).",
+      "labResults": [
+        {
+          "id": "lab-201",
+          "name": "Absolute Neutrophil Count (ANC)",
+          "parameterKey": "anc",
+          "value": 1920,
+          "unit": "/µL",
+          "referenceRange": "1500-8000",
+          "testDate": "2026-11-11",
+          "sourceLocation": "CBC Panel 2026-11-11"
+        },
+        {
+          "id": "lab-202",
+          "name": "Platelet Count",
+          "parameterKey": "platelets",
+          "value": 78000,
+          "unit": "/µL",
+          "referenceRange": "150000-400000",
+          "testDate": "2026-11-11",
+          "sourceLocation": "CBC Panel 2026-11-11"
+        },
+        {
+          "id": "lab-203",
+          "name": "Hemoglobin",
+          "parameterKey": "hemoglobin",
+          "value": 9.8,
+          "unit": "g/dL",
+          "referenceRange": "13.0-17.0",
+          "testDate": "2026-11-11",
+          "sourceLocation": "CBC Panel 2026-11-11"
+        },
+        {
+          "id": "lab-204",
+          "name": "Estimated GFR (eGFR)",
+          "parameterKey": "egfr",
+          "value": 61,
+          "unit": "mL/min",
+          "referenceRange": ">= 60",
+          "testDate": "2026-11-11",
+          "sourceLocation": "CMP Panel 2026-11-11"
+        }
+      ],
+      "clinicalNotes": "SYNTHETIC DEMO RECORD: 67-year-old male with KRAS G12C metastatic colorectal adenocarcinoma progressing after FOLFOX and FOLFIRI. Persistent thrombocytopenia (platelets 78,000 /µL on 2026-11-11). Cardiology note documents recent acute myocardial infarction on 2026-08-19 (within 3 months) managed with stenting and dual antiplatelet therapy.",
+      "uploadedDocumentName": "SYNTH_PT_002_GI_Oncology_Summary.txt",
+      "missingOrUncertainFields": [],
+      "aiProcessingAuthorized": true,
+      "createdAt": "2026-11-11T10:00:00Z",
+      "updatedAt": "2026-11-11T10:30:00Z",
+      "extractedFacts": [
+        {
+          "id": "fact-201",
+          "patientId": "patient-demo-002",
+          "category": "diagnosis",
+          "label": "Primary Diagnosis",
+          "value": "Metastatic Colorectal Adenocarcinoma with KRAS G12C mutation",
+          "temporalStatus": "CURRENT",
+          "confidence": "HIGH",
+          "exactSourceQuote": "67-year-old male with KRAS G12C metastatic colorectal adenocarcinoma",
+          "sourceLocation": "GI Oncology Summary, Line 1",
+          "reviewStatus": "APPROVED",
+          "reviewedBy": "Demo Coordinator",
+          "reviewedAt": "2026-11-11T10:15:00Z",
+          "extractionMethod": "SYNTHETIC_DEMO"
+        },
+        {
+          "id": "fact-202",
+          "patientId": "patient-demo-002",
+          "category": "lab_value",
+          "label": "Platelet Count",
+          "value": "78000 /µL",
+          "numericValue": 78000,
+          "unit": "/µL",
+          "testDate": "2026-11-11",
+          "temporalStatus": "CURRENT",
+          "confidence": "HIGH",
+          "exactSourceQuote": "Persistent thrombocytopenia (platelets 78,000 /µL on 2026-11-11)",
+          "sourceLocation": "GI Oncology Summary, Line 2",
+          "reviewStatus": "APPROVED",
+          "reviewedBy": "Demo Coordinator",
+          "reviewedAt": "2026-11-11T10:15:00Z",
+          "extractionMethod": "SYNTHETIC_DEMO"
+        },
+        {
+          "id": "fact-203",
+          "patientId": "patient-demo-002",
+          "category": "comorbidity",
+          "label": "Recent Cardiac Event",
+          "value": "Acute myocardial infarction on 2026-08-19 (3 months ago)",
+          "testDate": "2026-08-19",
+          "temporalStatus": "CURRENT",
+          "confidence": "HIGH",
+          "exactSourceQuote": "Cardiology note documents recent acute myocardial infarction on 2026-08-19 (within 3 months)",
+          "sourceLocation": "GI Oncology Summary, Line 3",
+          "reviewStatus": "APPROVED",
+          "reviewedBy": "Demo Coordinator",
+          "reviewedAt": "2026-11-11T10:15:00Z",
+          "extractionMethod": "SYNTHETIC_DEMO"
+        }
+      ]
+    },
+    {
+      "id": "patient-demo-003",
+      "mrnLabel": "SYNTH-PT-003",
+      "displayName": "Priya Nair (Synthetic Demo)",
+      "isSynthetic": true,
+      "age": 51,
+      "dateOfBirth": "1975-09-03",
+      "sex": "FEMALE",
+      "primaryDiagnosis": "Triple-Negative Breast Cancer (TNBC)",
+      "diseaseStage": "Stage IV (Recurrent nodal and pulmonary nodules)",
+      "ecogStatus": 1,
+      "medicalHistory": [
+        "Hypothyroidism"
+      ],
+      "medications": [
+        "Levothyroxine 75 mcg daily"
+      ],
+      "allergies": [
+        "Sulfa drugs"
+      ],
+      "previousTreatments": [
+        "Neoadjuvant paclitaxel + carboplatin (2024)"
+      ],
+      "pathologyInfo": "Core needle biopsy confirms ER-/PR-/HER2- invasive ductal carcinoma (TNBC). PD-L1 CPS immunohistochemistry pending — result not yet available in chart.",
+      "labResults": [
+        {
+          "id": "lab-301",
+          "name": "Absolute Neutrophil Count (ANC)",
+          "parameterKey": "anc",
+          "value": 2100,
+          "unit": "/µL",
+          "referenceRange": "1500-8000",
+          "testDate": "2026-11-06",
+          "sourceLocation": "CBC Panel 2026-11-06"
+        },
+        {
+          "id": "lab-302",
+          "name": "Platelet Count",
+          "parameterKey": "platelets",
+          "value": 184000,
+          "unit": "/µL",
+          "referenceRange": "150000-400000",
+          "testDate": "2026-11-06",
+          "sourceLocation": "CBC Panel 2026-11-06"
+        }
+      ],
+      "clinicalNotes": "SYNTHETIC DEMO RECORD: 51-year-old female with recurrent Stage IV Triple-Negative Breast Cancer (TNBC), ECOG 1. Complete metabolic panel (AST, ALT, Total Bilirubin) not available from outside lab. PD-L1 CPS score pending pathology addendum. Baseline echocardiogram LVEF measurement not recorded in current chart.",
+      "uploadedDocumentName": "SYNTH_PT_003_Outside_Referral.txt",
+      "missingOrUncertainFields": [
+        "PD-L1 Combined Positive Score (CPS) pathology addendum",
+        "Hepatic panel (AST, ALT, Total Bilirubin)",
+        "Recent Echocardiogram / LVEF assessment"
+      ],
+      "aiProcessingAuthorized": true,
+      "createdAt": "2026-11-12T11:00:00Z",
+      "updatedAt": "2026-11-12T11:20:00Z",
+      "extractedFacts": [
+        {
+          "id": "fact-301",
+          "patientId": "patient-demo-003",
+          "category": "diagnosis",
+          "label": "Primary Diagnosis",
+          "value": "Stage IV Triple-Negative Breast Cancer (TNBC)",
+          "temporalStatus": "CURRENT",
+          "confidence": "HIGH",
+          "exactSourceQuote": "51-year-old female with recurrent Stage IV Triple-Negative Breast Cancer (TNBC)",
+          "sourceLocation": "Outside Referral Note, Paragraph 1",
+          "reviewStatus": "APPROVED",
+          "reviewedBy": "Demo Coordinator",
+          "reviewedAt": "2026-11-12T11:10:00Z",
+          "extractionMethod": "SYNTHETIC_DEMO"
+        },
+        {
+          "id": "fact-302",
+          "patientId": "patient-demo-003",
+          "category": "biomarker",
+          "label": "PD-L1 CPS Score",
+          "value": "Pending — PD-L1 CPS result not yet available in chart",
+          "temporalStatus": "UNCERTAIN",
+          "confidence": "LOW",
+          "uncertaintyNote": "Pathology IHC addendum pending from outside reference lab.",
+          "exactSourceQuote": "PD-L1 CPS immunohistochemistry pending — result not yet available in chart.",
+          "sourceLocation": "Pathology Summary",
+          "reviewStatus": "APPROVED",
+          "reviewedBy": "Demo Coordinator",
+          "reviewedAt": "2026-11-12T11:10:00Z",
+          "extractionMethod": "SYNTHETIC_DEMO"
+        }
+      ]
+    },
+    {
+      "id": "patient-demo-004",
+      "mrnLabel": "SYNTH-PT-004",
+      "displayName": "David Thorne (Synthetic Demo)",
+      "isSynthetic": true,
+      "age": 63,
+      "dateOfBirth": "1963-02-11",
+      "sex": "MALE",
+      "primaryDiagnosis": "Stage IV Cutaneous Melanoma (BRAF V600E)",
+      "diseaseStage": "Stage IV",
+      "ecogStatus": 1,
+      "medicalHistory": [
+        "Hyperlipidemia"
+      ],
+      "medications": [
+        "Rosuvastatin 20 mg daily"
+      ],
+      "allergies": [
+        "None documented"
+      ],
+      "previousTreatments": [
+        "Wide local excision + sentinel node biopsy (2025-05)"
+      ],
+      "pathologyInfo": "Cutaneous melanoma with BRAF V600E mutation confirmed on PCR.",
+      "labResults": [
+        {
+          "id": "lab-401",
+          "name": "Absolute Neutrophil Count (ANC)",
+          "parameterKey": "anc",
+          "value": 3100,
+          "unit": "/µL",
+          "referenceRange": "1500-8000",
+          "testDate": "2026-11-05",
+          "sourceLocation": "CBC Panel 2026-11-05"
+        },
+        {
+          "id": "lab-402",
+          "name": "Estimated GFR (eGFR)",
+          "parameterKey": "egfr",
+          "value": 82,
+          "unit": "mL/min",
+          "referenceRange": ">= 60",
+          "testDate": "2026-11-05",
+          "sourceLocation": "CMP Panel 2026-11-05"
+        }
+      ],
+      "clinicalNotes": "SYNTHETIC DEMO RECORD WITH CONFLICTING EVIDENCE: Oncology Clinic Note (2026-10-28) states \"ECOG performance status 1; no active brain metastases reported.\" However, Brain MRI Addendum (2026-11-04) documents \"new 9 mm right temporal lesion consistent with untreated brain metastasis,\" and Physical Therapy Consult (2026-11-06) records \"ECOG 2 functional decline.\"",
+      "uploadedDocumentName": "SYNTH_PT_004_Combined_Records_Conflict.txt",
+      "missingOrUncertainFields": [
+        "Conflicting ECOG status (1 vs 2)",
+        "Conflicting Brain MRI CNS status"
+      ],
+      "aiProcessingAuthorized": true,
+      "createdAt": "2026-11-12T14:00:00Z",
+      "updatedAt": "2026-11-12T14:30:00Z",
+      "extractedFacts": [
+        {
+          "id": "fact-401",
+          "patientId": "patient-demo-004",
+          "category": "diagnosis",
+          "label": "Primary Diagnosis",
+          "value": "Stage IV Cutaneous Melanoma with BRAF V600E mutation",
+          "temporalStatus": "CURRENT",
+          "confidence": "HIGH",
+          "exactSourceQuote": "Cutaneous melanoma with BRAF V600E mutation confirmed on PCR.",
+          "sourceLocation": "Pathology Report",
+          "reviewStatus": "APPROVED",
+          "reviewedBy": "Demo Coordinator",
+          "reviewedAt": "2026-11-12T14:10:00Z",
+          "extractionMethod": "SYNTHETIC_DEMO"
+        },
+        {
+          "id": "fact-402",
+          "patientId": "patient-demo-004",
+          "category": "performance_status",
+          "label": "ECOG Status (Oncology Note)",
+          "value": "ECOG 1",
+          "numericValue": 1,
+          "unit": "ECOG",
+          "testDate": "2026-10-28",
+          "temporalStatus": "CURRENT",
+          "confidence": "MODERATE",
+          "uncertaintyNote": "Older than PT consult note (2026-11-06).",
+          "exactSourceQuote": "Oncology Clinic Note (2026-10-28) states \"ECOG performance status 1",
+          "sourceLocation": "Oncology Clinic Note 2026-10-28",
+          "reviewStatus": "APPROVED",
+          "reviewedBy": "Demo Coordinator",
+          "reviewedAt": "2026-11-12T14:10:00Z",
+          "extractionMethod": "SYNTHETIC_DEMO"
+        },
+        {
+          "id": "fact-403",
+          "patientId": "patient-demo-004",
+          "category": "performance_status",
+          "label": "ECOG Status (PT Consult)",
+          "value": "ECOG 2",
+          "numericValue": 2,
+          "unit": "ECOG",
+          "testDate": "2026-11-06",
+          "temporalStatus": "CURRENT",
+          "confidence": "MODERATE",
+          "uncertaintyNote": "Conflicts with Oncology Note ECOG 1.",
+          "exactSourceQuote": "Physical Therapy Consult (2026-11-06) records \"ECOG 2 functional decline.\"",
+          "sourceLocation": "Physical Therapy Consult 2026-11-06",
+          "reviewStatus": "APPROVED",
+          "reviewedBy": "Demo Coordinator",
+          "reviewedAt": "2026-11-12T14:10:00Z",
+          "extractionMethod": "SYNTHETIC_DEMO"
+        },
+        {
+          "id": "fact-404",
+          "patientId": "patient-demo-004",
+          "category": "comorbidity",
+          "label": "Brain / CNS Metastasis (Oncology Note)",
+          "value": "No active brain metastases reported",
+          "testDate": "2026-10-28",
+          "temporalStatus": "NEGATED",
+          "confidence": "MODERATE",
+          "exactSourceQuote": "no active brain metastases reported.",
+          "sourceLocation": "Oncology Clinic Note 2026-10-28",
+          "reviewStatus": "APPROVED",
+          "reviewedBy": "Demo Coordinator",
+          "reviewedAt": "2026-11-12T14:10:00Z",
+          "extractionMethod": "SYNTHETIC_DEMO"
+        },
+        {
+          "id": "fact-405",
+          "patientId": "patient-demo-004",
+          "category": "comorbidity",
+          "label": "Brain / CNS Metastasis (MRI Addendum)",
+          "value": "New 9 mm right temporal untreated brain metastasis",
+          "testDate": "2026-11-04",
+          "temporalStatus": "CURRENT",
+          "confidence": "HIGH",
+          "uncertaintyNote": "Contradicts prior oncology note; requires physician reconciliation.",
+          "exactSourceQuote": "Brain MRI Addendum (2026-11-04) documents \"new 9 mm right temporal lesion consistent with untreated brain metastasis\"",
+          "sourceLocation": "Brain MRI Addendum 2026-11-04",
+          "reviewStatus": "APPROVED",
+          "reviewedBy": "Demo Coordinator",
+          "reviewedAt": "2026-11-12T14:10:00Z",
+          "extractionMethod": "SYNTHETIC_DEMO"
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "match-demo-001",
+      "patientId": "patient-demo-001",
+      "patientName": "Elena Rostova (Synthetic Demo)",
+      "patientMrnLabel": "SYNTH-PT-001",
+      "trialId": "trial-demo-001",
+      "nctId": "NCT05841290",
+      "trialTitle": "EGFR-Bispecific Study in First-Line EGFR+ NSCLC",
+      "trialCondition": "Non-Small Cell Lung Cancer",
+      "trialPhase": "PHASE2",
+      "recruitmentStatus": "RECRUITING",
+      "trialLocationSummary": "Seattle, WA, United States",
+      "trialDataOrigin": "DEMO_SYNTHETIC",
+      "overallOutcome": "POTENTIAL_PRE_SCREENING_MATCH",
+      "requiresHumanConfirmation": true,
+      "reviewStatus": "IN_REVIEW",
+      "isDemoGenerated": true,
+      "summaryCounts": {
+        "met": 11,
+        "notMet": 0,
+        "unknown": 0,
+        "conflicting": 0,
+        "total": 11
+      },
+      "evaluations": [
+        {
+          "id": "eval-crit-001-1-patient-demo-001",
+          "criterionId": "crit-001-1",
+          "criterionType": "INCLUSION",
+          "category": "AGE",
+          "originalCriterionText": "Age >= 18 years at time of informed consent.",
+          "sourceSection": "Inclusion Criteria #1",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Age 58 years (DOB: 1968-04-14)",
+          "evidenceSourceRef": "Demographics (SYNTH-PT-001)",
+          "explanation": "Patient age (58 yrs) satisfies protocol threshold (18+ yrs).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-001-2-patient-demo-001",
+          "criterionId": "crit-001-2",
+          "criterionType": "INCLUSION",
+          "category": "DIAGNOSIS",
+          "originalCriterionText": "Histologically confirmed Stage IIIB or Stage IV Non-Small Cell Lung Cancer (NSCLC).",
+          "sourceSection": "Inclusion Criteria #2",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Non-Small Cell Lung Cancer (Lung Adenocarcinoma) · Stage IV (Pleural and osseous involvement, no CNS disease)",
+          "evidenceSourceRef": "Thoracic Consult Note, Paragraph 1",
+          "explanation": "Patient diagnosis/pathology aligns with protocol requirement (matched terms: non-small cell lung cancer, lung adenocarcinoma).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-001-3-patient-demo-001",
+          "criterionId": "crit-001-3",
+          "criterionType": "INCLUSION",
+          "category": "DISEASE_STAGE",
+          "originalCriterionText": "Locally advanced Stage IIIB or metastatic Stage IV disease.",
+          "sourceSection": "Inclusion Criteria #2",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Non-Small Cell Lung Cancer (Lung Adenocarcinoma) · Stage IV (Pleural and osseous involvement, no CNS disease)",
+          "evidenceSourceRef": "Thoracic Consult Note, Paragraph 1",
+          "explanation": "Patient diagnosis/pathology aligns with protocol requirement (matched terms: stage iv).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-001-4-patient-demo-001",
+          "criterionId": "crit-001-4",
+          "criterionType": "INCLUSION",
+          "category": "DIAGNOSIS",
+          "originalCriterionText": "Documented activating EGFR mutation (Exon 19 deletion or Exon 21 L858R).",
+          "sourceSection": "Inclusion Criteria #3",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Non-Small Cell Lung Cancer (Lung Adenocarcinoma) · Stage IV (Pleural and osseous involvement, no CNS disease)",
+          "evidenceSourceRef": "Pathology & NGS Summary",
+          "explanation": "Patient diagnosis/pathology aligns with protocol requirement (matched terms: egfr exon 19, exon 19 deletion, egfr).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-001-5-patient-demo-001",
+          "criterionId": "crit-001-5",
+          "criterionType": "INCLUSION",
+          "category": "PERFORMANCE_STATUS",
+          "originalCriterionText": "ECOG performance status of 0 or 1.",
+          "sourceSection": "Inclusion Criteria #4",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "ECOG Performance Status: 1",
+          "evidenceSourceRef": "Thoracic Consult Note, Paragraph 1",
+          "explanation": "Recorded ECOG status (1) meets protocol threshold (<= 1).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-001-6-patient-demo-001",
+          "criterionId": "crit-001-6",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalCriterionText": "Absolute Neutrophil Count (ANC) >= 1500 /µL.",
+          "sourceSection": "Inclusion Criteria #5",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Absolute Neutrophil Count (ANC): 2450 /µL (2026-11-08)",
+          "evidenceSourceRef": "CBC Panel 2026-11-08",
+          "explanation": "Observed value (2450 /µL) satisfies protocol threshold (Absolute Neutrophil Count (ANC) >= 1500 /µL.).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-001-7-patient-demo-001",
+          "criterionId": "crit-001-7",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalCriterionText": "Platelets >= 100000 /µL.",
+          "sourceSection": "Inclusion Criteria #5",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Platelet Count: 195000 /µL (2026-11-08)",
+          "evidenceSourceRef": "CBC Panel 2026-11-08",
+          "explanation": "Observed value (195000 /µL) satisfies protocol threshold (Platelets >= 100000 /µL.).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-001-8-patient-demo-001",
+          "criterionId": "crit-001-8",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalCriterionText": "Hemoglobin >= 9.0 g/dL.",
+          "sourceSection": "Inclusion Criteria #5",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Hemoglobin: 11.4 g/dL (2026-11-08)",
+          "evidenceSourceRef": "CBC Panel 2026-11-08",
+          "explanation": "Observed value (11.4 g/dL) satisfies protocol threshold (Hemoglobin >= 9.0 g/dL.).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-001-9-patient-demo-001",
+          "criterionId": "crit-001-9",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalCriterionText": "Adequate renal function defined as eGFR >= 45 mL/min.",
+          "sourceSection": "Inclusion Criteria #6",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Estimated GFR (eGFR): 76 mL/min (2026-11-08)",
+          "evidenceSourceRef": "CMP Panel 2026-11-08",
+          "explanation": "Observed value (76 mL/min) satisfies protocol threshold (Adequate renal function defined as eGFR >= 45 mL/min.).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-001-10-patient-demo-001",
+          "criterionId": "crit-001-10",
+          "criterionType": "EXCLUSION",
+          "category": "PREVIOUS_TREATMENT",
+          "originalCriterionText": "Prior systemic therapy with an EGFR tyrosine kinase inhibitor (TKI) for metastatic disease.",
+          "sourceSection": "Exclusion Criteria #1",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "No prior systemic EGFR TKI or chemotherapy administered (\"No prior systemic EGFR TKI or chemotherapy administered.\")",
+          "evidenceSourceRef": "Thoracic Consult Note, Paragraph 1",
+          "explanation": "Clinical record explicitly documents absence of the excluded condition/treatment.",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-001-11-patient-demo-001",
+          "criterionId": "crit-001-11",
+          "criterionType": "EXCLUSION",
+          "category": "COMORBIDITY",
+          "originalCriterionText": "Known active or untreated symptomatic central nervous system (CNS) / brain metastases.",
+          "sourceSection": "Exclusion Criteria #2",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "No brain metastases or leptomeningeal enhancement on Brain MRI (\"Baseline Brain MRI (2026-10-19) showed no brain metastases\")",
+          "evidenceSourceRef": "Thoracic Consult Note, Paragraph 1",
+          "explanation": "Clinical record explicitly documents absence of the excluded condition/treatment.",
+          "confidence": "HIGH"
+        }
+      ],
+      "missingDocumentation": [],
+      "reviewerComments": [
+        {
+          "id": "cmt-demo-1",
+          "authorName": "Sarah J. Evans, CCRP",
+          "authorRole": "RESEARCH_COORDINATOR",
+          "comment": "All baseline hematology, renal, and EGFR Exon 19 deletion criteria satisfied in synthetic chart. Pending Principal Investigator confirmation.",
+          "createdAt": "2026-11-12T15:10:00Z"
+        }
+      ],
+      "createdAt": "2026-11-17T10:16:17.452Z",
+      "updatedAt": "2026-11-17T10:16:17.452Z"
+    },
+    {
+      "id": "match-demo-002",
+      "patientId": "patient-demo-001",
+      "patientName": "Elena Rostova (Synthetic Demo)",
+      "patientMrnLabel": "SYNTH-PT-001",
+      "trialId": "trial-demo-002",
+      "nctId": "NCT06019450",
+      "trialTitle": "HER3-ADC Post-Osimertinib Study in EGFR+ NSCLC",
+      "trialCondition": "Non-Small Cell Lung Cancer",
+      "trialPhase": "PHASE3",
+      "recruitmentStatus": "RECRUITING",
+      "trialLocationSummary": "Chicago, IL, United States",
+      "trialDataOrigin": "DEMO_SYNTHETIC",
+      "overallOutcome": "REQUIRES_REVIEW",
+      "requiresHumanConfirmation": true,
+      "reviewStatus": "REVIEW_COMPLETE",
+      "isDemoGenerated": true,
+      "summaryCounts": {
+        "met": 4,
+        "notMet": 1,
+        "unknown": 0,
+        "conflicting": 0,
+        "total": 5
+      },
+      "evaluations": [
+        {
+          "id": "eval-crit-002-1-patient-demo-001",
+          "criterionId": "crit-002-1",
+          "criterionType": "INCLUSION",
+          "category": "AGE",
+          "originalCriterionText": "Age >= 18 years.",
+          "sourceSection": "Inclusion Criteria #1",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Age 58 years (DOB: 1968-04-14)",
+          "evidenceSourceRef": "Demographics (SYNTH-PT-001)",
+          "explanation": "Patient age (58 yrs) satisfies protocol threshold (18+ yrs).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-002-2-patient-demo-001",
+          "criterionId": "crit-002-2",
+          "criterionType": "INCLUSION",
+          "category": "DIAGNOSIS",
+          "originalCriterionText": "Pathologically documented Stage IV NSCLC with EGFR Exon 19 deletion or L858R.",
+          "sourceSection": "Inclusion Criteria #2",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Non-Small Cell Lung Cancer (Lung Adenocarcinoma) · Stage IV (Pleural and osseous involvement, no CNS disease)",
+          "evidenceSourceRef": "Thoracic Consult Note, Paragraph 1",
+          "explanation": "Patient diagnosis/pathology aligns with protocol requirement (matched terms: non-small cell lung cancer).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-002-3-patient-demo-001",
+          "criterionId": "crit-002-3",
+          "criterionType": "INCLUSION",
+          "category": "PREVIOUS_TREATMENT",
+          "originalCriterionText": "Required prior progression on at least one third-generation EGFR TKI (e.g., osimertinib).",
+          "sourceSection": "Inclusion Criteria #3",
+          "requiresHumanConfirmation": true,
+          "status": "NOT_MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Documented treatments: Diagnostic VATS biopsy (2026-10-08), Palliative focal rib radiation (2026-10-20)",
+          "evidenceSourceRef": "Treatment History (SYNTH-PT-001)",
+          "explanation": "Required prior therapy/condition is absent or explicitly negated in patient records.",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-002-4-patient-demo-001",
+          "criterionId": "crit-002-4",
+          "criterionType": "INCLUSION",
+          "category": "PERFORMANCE_STATUS",
+          "originalCriterionText": "ECOG performance status <= 1.",
+          "sourceSection": "Inclusion Criteria #4",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "ECOG Performance Status: 1",
+          "evidenceSourceRef": "Thoracic Consult Note, Paragraph 1",
+          "explanation": "Recorded ECOG status (1) meets protocol threshold (<= 1).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-002-5-patient-demo-001",
+          "criterionId": "crit-002-5",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalCriterionText": "Platelets >= 100000 /µL.",
+          "sourceSection": "Inclusion Criteria #5",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Platelet Count: 195000 /µL (2026-11-08)",
+          "evidenceSourceRef": "CBC Panel 2026-11-08",
+          "explanation": "Observed value (195000 /µL) satisfies protocol threshold (Platelets >= 100000 /µL.).",
+          "confidence": "HIGH"
+        }
+      ],
+      "missingDocumentation": [],
+      "reviewerComments": [],
+      "createdAt": "2026-11-17T10:16:17.453Z",
+      "updatedAt": "2026-11-17T10:16:17.453Z",
+      "reviewedByName": "Dr. Aris Thorne, MD",
+      "reviewedAt": "2026-11-12T16:00:00Z"
+    },
+    {
+      "id": "match-demo-003",
+      "patientId": "patient-demo-002",
+      "patientName": "Marcus Vance (Synthetic Demo)",
+      "patientMrnLabel": "SYNTH-PT-002",
+      "trialId": "trial-demo-003",
+      "nctId": "NCT05910322",
+      "trialTitle": "KRAS G12C + Anti-EGFR in Metastatic Colorectal Cancer",
+      "trialCondition": "Colorectal Cancer",
+      "trialPhase": "PHASE2",
+      "recruitmentStatus": "RECRUITING",
+      "trialLocationSummary": "Boston, MA, United States",
+      "trialDataOrigin": "DEMO_SYNTHETIC",
+      "overallOutcome": "REQUIRES_REVIEW",
+      "requiresHumanConfirmation": true,
+      "reviewStatus": "PENDING_REVIEW",
+      "isDemoGenerated": true,
+      "summaryCounts": {
+        "met": 4,
+        "notMet": 2,
+        "unknown": 0,
+        "conflicting": 0,
+        "total": 6
+      },
+      "evaluations": [
+        {
+          "id": "eval-crit-003-1-patient-demo-002",
+          "criterionId": "crit-003-1",
+          "criterionType": "INCLUSION",
+          "category": "AGE",
+          "originalCriterionText": "Age >= 18 years.",
+          "sourceSection": "Inclusion Criteria #1",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Age 67 years (DOB: 1959-07-22)",
+          "evidenceSourceRef": "Demographics (SYNTH-PT-002)",
+          "explanation": "Patient age (67 yrs) satisfies protocol threshold (18+ yrs).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-003-2-patient-demo-002",
+          "criterionId": "crit-003-2",
+          "criterionType": "INCLUSION",
+          "category": "DIAGNOSIS",
+          "originalCriterionText": "Histologically confirmed metastatic colorectal adenocarcinoma with documented KRAS G12C mutation.",
+          "sourceSection": "Inclusion Criteria #2",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Metastatic Colorectal Adenocarcinoma (KRAS G12C) · Stage IV (Hepatic and peritoneal metastases)",
+          "evidenceSourceRef": "GI Oncology Summary, Line 1",
+          "explanation": "Patient diagnosis/pathology aligns with protocol requirement (matched terms: colorectal, kras g12c).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-003-3-patient-demo-002",
+          "criterionId": "crit-003-3",
+          "criterionType": "INCLUSION",
+          "category": "PERFORMANCE_STATUS",
+          "originalCriterionText": "ECOG performance status 0 or 1.",
+          "sourceSection": "Inclusion Criteria #3",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "ECOG Performance Status: 1",
+          "evidenceSourceRef": "Clinical Profile (SYNTH-PT-002)",
+          "explanation": "Recorded ECOG status (1) meets protocol threshold (<= 1).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-003-4-patient-demo-002",
+          "criterionId": "crit-003-4",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalCriterionText": "Platelets >= 100000 /µL.",
+          "sourceSection": "Inclusion Criteria #4",
+          "requiresHumanConfirmation": true,
+          "status": "NOT_MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Platelet Count: 78000 /µL (2026-11-11)",
+          "evidenceSourceRef": "CBC Panel 2026-11-11",
+          "explanation": "Observed value (78000 /µL) does not meet protocol threshold (Platelets >= 100000 /µL.).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-003-5-patient-demo-002",
+          "criterionId": "crit-003-5",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalCriterionText": "Hemoglobin >= 9.0 g/dL.",
+          "sourceSection": "Inclusion Criteria #4",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Hemoglobin: 9.8 g/dL (2026-11-11)",
+          "evidenceSourceRef": "CBC Panel 2026-11-11",
+          "explanation": "Observed value (9.8 g/dL) satisfies protocol threshold (Hemoglobin >= 9.0 g/dL.).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-003-6-patient-demo-002",
+          "criterionId": "crit-003-6",
+          "criterionType": "EXCLUSION",
+          "category": "COMORBIDITY",
+          "originalCriterionText": "Acute myocardial infarction, unstable angina, or coronary artery bypass within 6 months prior to screening.",
+          "sourceSection": "Exclusion Criteria #1",
+          "requiresHumanConfirmation": true,
+          "status": "NOT_MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Acute myocardial infarction on 2026-08-19 (3 months ago) (\"Cardiology note documents recent acute myocardial infarction on 2026-08-19 (within 3 months)\")",
+          "evidenceSourceRef": "GI Oncology Summary, Line 3",
+          "explanation": "Exclusion condition appears present in patient history/records, making this exclusion criterion NOT MET.",
+          "confidence": "HIGH"
+        }
+      ],
+      "missingDocumentation": [],
+      "reviewerComments": [],
+      "createdAt": "2026-11-17T10:16:17.453Z",
+      "updatedAt": "2026-11-17T10:16:17.453Z"
+    },
+    {
+      "id": "match-demo-004",
+      "patientId": "patient-demo-003",
+      "patientName": "Priya Nair (Synthetic Demo)",
+      "patientMrnLabel": "SYNTH-PT-003",
+      "trialId": "trial-demo-004",
+      "nctId": "NCT05728814",
+      "trialTitle": "TROP2-ADC + Immunotherapy in Advanced TNBC",
+      "trialCondition": "Triple-Negative Breast Cancer",
+      "trialPhase": "PHASE2_PHASE3",
+      "recruitmentStatus": "RECRUITING",
+      "trialLocationSummary": "Houston, TX, United States",
+      "trialDataOrigin": "DEMO_SYNTHETIC",
+      "overallOutcome": "INSUFFICIENT_INFORMATION",
+      "requiresHumanConfirmation": true,
+      "reviewStatus": "PENDING_REVIEW",
+      "isDemoGenerated": true,
+      "summaryCounts": {
+        "met": 3,
+        "notMet": 0,
+        "unknown": 4,
+        "conflicting": 0,
+        "total": 7
+      },
+      "evaluations": [
+        {
+          "id": "eval-crit-004-1-patient-demo-003",
+          "criterionId": "crit-004-1",
+          "criterionType": "INCLUSION",
+          "category": "AGE",
+          "originalCriterionText": "Age >= 18 years.",
+          "sourceSection": "Inclusion Criteria #1",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Age 51 years (DOB: 1975-09-03)",
+          "evidenceSourceRef": "Demographics (SYNTH-PT-003)",
+          "explanation": "Patient age (51 yrs) satisfies protocol threshold (18+ yrs).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-004-2-patient-demo-003",
+          "criterionId": "crit-004-2",
+          "criterionType": "INCLUSION",
+          "category": "DIAGNOSIS",
+          "originalCriterionText": "Histologically confirmed Triple-Negative Breast Cancer (TNBC), Stage IIIB or Stage IV.",
+          "sourceSection": "Inclusion Criteria #2",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Triple-Negative Breast Cancer (TNBC) · Stage IV (Recurrent nodal and pulmonary nodules)",
+          "evidenceSourceRef": "Outside Referral Note, Paragraph 1",
+          "explanation": "Patient diagnosis/pathology aligns with protocol requirement (matched terms: triple-negative breast cancer, tnbc).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-004-3-patient-demo-003",
+          "criterionId": "crit-004-3",
+          "criterionType": "INCLUSION",
+          "category": "DIAGNOSIS",
+          "originalCriterionText": "Documented PD-L1 Combined Positive Score (CPS >= 10) from validated pathology.",
+          "sourceSection": "Inclusion Criteria #3",
+          "requiresHumanConfirmation": true,
+          "status": "UNKNOWN",
+          "evaluationMethod": "GAP_DETECTOR",
+          "patientEvidence": "No result available for \"pdl1_cps\".",
+          "evidenceSourceRef": "Lab & Pathology Records (SYNTH-PT-003)",
+          "explanation": "Protocol requires Documented PD-L1 Combined Positive Score (CPS >= 10) from validated pathology., but no corresponding value was found in supplied patient records.",
+          "confidence": "LOW",
+          "uncertaintyNote": "Missing Pathology Biomarker Addendum (PD-L1 CPS score)."
+        },
+        {
+          "id": "eval-crit-004-4-patient-demo-003",
+          "criterionId": "crit-004-4",
+          "criterionType": "INCLUSION",
+          "category": "PERFORMANCE_STATUS",
+          "originalCriterionText": "ECOG performance status 0 or 1.",
+          "sourceSection": "Inclusion Criteria #4",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "ECOG Performance Status: 1",
+          "evidenceSourceRef": "Clinical Profile (SYNTH-PT-003)",
+          "explanation": "Recorded ECOG status (1) meets protocol threshold (<= 1).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-004-5-patient-demo-003",
+          "criterionId": "crit-004-5",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalCriterionText": "AST <= 120 U/L.",
+          "sourceSection": "Inclusion Criteria #5",
+          "requiresHumanConfirmation": true,
+          "status": "UNKNOWN",
+          "evaluationMethod": "GAP_DETECTOR",
+          "patientEvidence": "No result available for \"ast\".",
+          "evidenceSourceRef": "Lab & Pathology Records (SYNTH-PT-003)",
+          "explanation": "Protocol requires AST <= 120 U/L., but no corresponding value was found in supplied patient records.",
+          "confidence": "LOW",
+          "uncertaintyNote": "Missing Hepatic Function Panel (AST)."
+        },
+        {
+          "id": "eval-crit-004-6-patient-demo-003",
+          "criterionId": "crit-004-6",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalCriterionText": "Total Bilirubin <= 1.5 mg/dL.",
+          "sourceSection": "Inclusion Criteria #5",
+          "requiresHumanConfirmation": true,
+          "status": "UNKNOWN",
+          "evaluationMethod": "GAP_DETECTOR",
+          "patientEvidence": "No result available for \"bilirubin\".",
+          "evidenceSourceRef": "Lab & Pathology Records (SYNTH-PT-003)",
+          "explanation": "Protocol requires Total Bilirubin <= 1.5 mg/dL., but no corresponding value was found in supplied patient records.",
+          "confidence": "LOW",
+          "uncertaintyNote": "Missing Total Bilirubin (Hepatic Panel)."
+        },
+        {
+          "id": "eval-crit-004-7-patient-demo-003",
+          "criterionId": "crit-004-7",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalCriterionText": "Left Ventricular Ejection Fraction (LVEF) >= 50%.",
+          "sourceSection": "Inclusion Criteria #6",
+          "requiresHumanConfirmation": true,
+          "status": "UNKNOWN",
+          "evaluationMethod": "GAP_DETECTOR",
+          "patientEvidence": "No result available for \"lvef\".",
+          "evidenceSourceRef": "Lab & Pathology Records (SYNTH-PT-003)",
+          "explanation": "Protocol requires Left Ventricular Ejection Fraction (LVEF) >= 50%., but no corresponding value was found in supplied patient records.",
+          "confidence": "LOW",
+          "uncertaintyNote": "Missing Cardiac Assessment (Echocardiogram / MUGA LVEF)."
+        }
+      ],
+      "missingDocumentation": [
+        {
+          "id": "miss-crit-004-3",
+          "criterionId": "crit-004-3",
+          "requiredCategory": "DIAGNOSIS",
+          "documentationNeeded": "Pathology Biomarker Addendum (PD-L1 CPS score)",
+          "reasonFromCriterion": "Inclusion Criteria #3: \"Documented PD-L1 Combined Positive Score (CPS >= 10) from validated pathology.\"",
+          "currentRecordGap": "No recent result documented for pdl1_cps.",
+          "clinicalTeamActionNote": "Documentation gap identified for pre-screening only. The treating clinical team must determine whether obtaining or updating this record is clinically appropriate."
+        },
+        {
+          "id": "miss-crit-004-5",
+          "criterionId": "crit-004-5",
+          "requiredCategory": "LAB_THRESHOLD",
+          "documentationNeeded": "Hepatic Function Panel (AST)",
+          "reasonFromCriterion": "Inclusion Criteria #5: \"AST <= 120 U/L.\"",
+          "currentRecordGap": "No recent result documented for ast.",
+          "clinicalTeamActionNote": "Documentation gap identified for pre-screening only. The treating clinical team must determine whether obtaining or updating this record is clinically appropriate."
+        },
+        {
+          "id": "miss-crit-004-6",
+          "criterionId": "crit-004-6",
+          "requiredCategory": "LAB_THRESHOLD",
+          "documentationNeeded": "Total Bilirubin (Hepatic Panel)",
+          "reasonFromCriterion": "Inclusion Criteria #5: \"Total Bilirubin <= 1.5 mg/dL.\"",
+          "currentRecordGap": "No recent result documented for bilirubin.",
+          "clinicalTeamActionNote": "Documentation gap identified for pre-screening only. The treating clinical team must determine whether obtaining or updating this record is clinically appropriate."
+        },
+        {
+          "id": "miss-crit-004-7",
+          "criterionId": "crit-004-7",
+          "requiredCategory": "LAB_THRESHOLD",
+          "documentationNeeded": "Cardiac Assessment (Echocardiogram / MUGA LVEF)",
+          "reasonFromCriterion": "Inclusion Criteria #6: \"Left Ventricular Ejection Fraction (LVEF) >= 50%.\"",
+          "currentRecordGap": "No recent result documented for lvef.",
+          "clinicalTeamActionNote": "Documentation gap identified for pre-screening only. The treating clinical team must determine whether obtaining or updating this record is clinically appropriate."
+        }
+      ],
+      "reviewerComments": [],
+      "createdAt": "2026-11-17T10:16:17.454Z",
+      "updatedAt": "2026-11-17T10:16:17.454Z"
+    },
+    {
+      "id": "match-demo-005",
+      "patientId": "patient-demo-004",
+      "patientName": "David Thorne (Synthetic Demo)",
+      "patientMrnLabel": "SYNTH-PT-004",
+      "trialId": "trial-demo-005",
+      "nctId": "NCT06104588",
+      "trialTitle": "Neoantigen mRNA + PD-1 Study in BRAF V600E Melanoma",
+      "trialCondition": "Cutaneous Melanoma",
+      "trialPhase": "PHASE2",
+      "recruitmentStatus": "RECRUITING",
+      "trialLocationSummary": "Denver, CO, United States",
+      "trialDataOrigin": "DEMO_SYNTHETIC",
+      "overallOutcome": "REQUIRES_REVIEW",
+      "requiresHumanConfirmation": true,
+      "reviewStatus": "PENDING_REVIEW",
+      "isDemoGenerated": true,
+      "summaryCounts": {
+        "met": 3,
+        "notMet": 0,
+        "unknown": 0,
+        "conflicting": 2,
+        "total": 5
+      },
+      "evaluations": [
+        {
+          "id": "eval-crit-005-1-patient-demo-004",
+          "criterionId": "crit-005-1",
+          "criterionType": "INCLUSION",
+          "category": "AGE",
+          "originalCriterionText": "Age >= 18 years.",
+          "sourceSection": "Inclusion Criteria #1",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Age 63 years (DOB: 1963-02-11)",
+          "evidenceSourceRef": "Demographics (SYNTH-PT-004)",
+          "explanation": "Patient age (63 yrs) satisfies protocol threshold (18+ yrs).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-005-2-patient-demo-004",
+          "criterionId": "crit-005-2",
+          "criterionType": "INCLUSION",
+          "category": "DIAGNOSIS",
+          "originalCriterionText": "Histologically confirmed Stage IIIB, IIIC, or Stage IV Cutaneous Melanoma with BRAF V600E mutation.",
+          "sourceSection": "Inclusion Criteria #2",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Stage IV Cutaneous Melanoma (BRAF V600E) · Stage IV",
+          "evidenceSourceRef": "Pathology Report",
+          "explanation": "Patient diagnosis/pathology aligns with protocol requirement (matched terms: melanoma, braf v600e).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-005-3-patient-demo-004",
+          "criterionId": "crit-005-3",
+          "criterionType": "INCLUSION",
+          "category": "PERFORMANCE_STATUS",
+          "originalCriterionText": "ECOG performance status 0 or 1.",
+          "sourceSection": "Inclusion Criteria #3",
+          "requiresHumanConfirmation": true,
+          "status": "CONFLICTING",
+          "evaluationMethod": "CONFLICT_DETECTOR",
+          "patientEvidence": "ECOG 1 (Oncology Clinic Note 2026-10-28) vs. ECOG 2 (Physical Therapy Consult 2026-11-06)",
+          "evidenceSourceRef": "Oncology Clinic Note 2026-10-28; Physical Therapy Consult 2026-11-06",
+          "explanation": "Conflicting performance status documented across clinical records (ECOG 1 (Oncology Clinic Note 2026-10-28) vs. ECOG 2 (Physical Therapy Consult 2026-11-06)). Physician reconciliation is required.",
+          "confidence": "LOW",
+          "uncertaintyNote": "Multiple discordant ECOG scores found in approved chart facts."
+        },
+        {
+          "id": "eval-crit-005-4-patient-demo-004",
+          "criterionId": "crit-005-4",
+          "criterionType": "INCLUSION",
+          "category": "LAB_THRESHOLD",
+          "originalCriterionText": "ANC >= 1500 /µL.",
+          "sourceSection": "Inclusion Criteria #4",
+          "requiresHumanConfirmation": true,
+          "status": "MET",
+          "evaluationMethod": "DETERMINISTIC_RULE",
+          "patientEvidence": "Absolute Neutrophil Count (ANC): 3100 /µL (2026-11-05)",
+          "evidenceSourceRef": "CBC Panel 2026-11-05",
+          "explanation": "Observed value (3100 /µL) satisfies protocol threshold (ANC >= 1500 /µL.).",
+          "confidence": "HIGH"
+        },
+        {
+          "id": "eval-crit-005-5-patient-demo-004",
+          "criterionId": "crit-005-5",
+          "criterionType": "EXCLUSION",
+          "category": "COMORBIDITY",
+          "originalCriterionText": "Active or untreated brain / CNS metastases on screening neuroimaging.",
+          "sourceSection": "Exclusion Criteria #1",
+          "requiresHumanConfirmation": true,
+          "status": "CONFLICTING",
+          "evaluationMethod": "CONFLICT_DETECTOR",
+          "patientEvidence": "\"No active brain metastases reported\" (Oncology Clinic Note 2026-10-28) vs. \"New 9 mm right temporal untreated brain metastasis\" (Brain MRI Addendum 2026-11-04)",
+          "evidenceSourceRef": "Oncology Clinic Note 2026-10-28; Brain MRI Addendum 2026-11-04",
+          "explanation": "Conflicting clinical evidence detected across chart documents. One record negates the finding while another documents active/present disease.",
+          "confidence": "LOW",
+          "uncertaintyNote": "Requires clinician reconciliation of discordant clinical notes/imaging."
+        }
+      ],
+      "missingDocumentation": [],
+      "reviewerComments": [],
+      "createdAt": "2026-11-17T10:16:17.454Z",
+      "updatedAt": "2026-11-17T10:16:17.454Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "audit-742df03c",
+      "timestamp": "2026-11-17T10:16:25.102Z",
+      "actorId": "user-demo-coord",
+      "actorName": "Sarah J. Evans, CCRP",
+      "actorRole": "RESEARCH_COORDINATOR",
+      "actionType": "PATIENT_DELETED",
+      "entityType": "PATIENT",
+      "entityId": "patient-1794910585084",
+      "summary": "Deleted patient profile SYNTH-PT-5084 and associated pre-screening records."
+    },
+    {
+      "id": "audit-b6a1cb2f",
+      "timestamp": "2026-11-17T10:16:25.094Z",
+      "actorId": "user-demo-coord",
+      "actorName": "Sarah J. Evans, CCRP",
+      "actorRole": "RESEARCH_COORDINATOR",
+      "actionType": "MATCH_EVALUATED",
+      "entityType": "MATCH",
+      "entityId": "match-patient-1794910585084-trial-demo-001",
+      "summary": "Pre-screened SYNTH-PT-5084 against NCT05841290: INSUFFICIENT_INFORMATION."
+    },
+    {
+      "id": "audit-d59608f1",
+      "timestamp": "2026-11-17T10:16:25.084Z",
+      "actorId": "user-demo-coord",
+      "actorName": "Sarah J. Evans, CCRP",
+      "actorRole": "RESEARCH_COORDINATOR",
+      "actionType": "PATIENT_CREATED",
+      "entityType": "PATIENT",
+      "entityId": "patient-1794910585084",
+      "summary": "Saved patient profile SYNTH-PT-5084 (Smoke Test Patient (Synthetic))."
+    },
+    {
+      "id": "audit-fa1b95d2",
+      "timestamp": "2026-11-17T10:16:24.722Z",
+      "actorId": "user-demo-coord",
+      "actorName": "Sarah J. Evans, CCRP",
+      "actorRole": "RESEARCH_COORDINATOR",
+      "actionType": "DEMO_LOGIN",
+      "entityType": "AUTH",
+      "entityId": "user-demo-coord",
+      "summary": "Started safe demo session as RESEARCH_COORDINATOR."
+    },
+    {
+      "id": "audit-seed-1",
+      "timestamp": "2026-11-17T10:16:17.236Z",
+      "actorId": "system",
+      "actorName": "System Seed",
+      "actorRole": "ADMINISTRATOR",
+      "actionType": "LOAD_DEMO_DATA",
+      "entityType": "SYSTEM",
+      "entityId": "demo-workspace",
+      "summary": "Initialized synthetic demonstration workspace with 5 trials and 4 synthetic patient profiles."
+    }
+  ],
+  "policy": {
+    "aiProcessingEnabled": true,
+    "requireConsentBeforeAi": true,
+    "requireFactReviewBeforeMatch": true,
+    "demoModeActive": true
+  },
+  "searchActivityCount": 15
+}

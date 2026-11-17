@@ -1,0 +1,6 @@
+{
+  "name": "Clinical Trial Match AI",
+  "description": "AI-powered clinical trial discovery, structured eligibility extraction, and evidence-backed patient pre-screening decision support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
